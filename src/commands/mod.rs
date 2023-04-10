@@ -7,6 +7,7 @@ pub use super::Ctx;
 mod config;
 mod hardware;
 mod input;
+mod math;
 mod ram;
 mod screen;
 mod timedate;
@@ -26,6 +27,7 @@ pub static OS_MENU: menu::Menu<Ctx> = menu::Menu {
         &screen::FILL_ITEM,
         &screen::MANDEL_ITEM,
         &input::KBTEST_ITEM,
+        &math::MATH_ITEM,
     ],
     entry: None,
     exit: None,
